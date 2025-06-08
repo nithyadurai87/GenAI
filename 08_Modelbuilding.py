@@ -39,4 +39,4 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 model.fit(train_X, y, epochs=40, verbose=1)
 
 Ilayaraja_book_model = {'model_json': model.to_json(),'model_weights': model.get_weights()}
-pickle.dump(Ilayaraja_book_model, open('Ilayaraja_book_model.pkl', 'wb'))
+pickle.dump(Ilayaraja_book_model, open('தமிழ்_புத்தகங்கள்_மாடல்.pkl', 'wb'))
