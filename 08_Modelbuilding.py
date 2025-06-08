@@ -11,7 +11,7 @@ x = x.replace('\n', '').replace('\r', '').replace('\ufeff', '').replace('“',''
 
 tokens = Tokenizer()
 tokens.fit_on_texts([x])
-pickle.dump(tokens, open('Ilayaraja_book_tokens.pkl', 'wb'))
+pickle.dump(tokens, open('தமிழ்_புத்தகங்கள்_டோக்கன்.pkl', 'wb'))
 dictionary = tokens.word_index
 
 x_n_grams = []
