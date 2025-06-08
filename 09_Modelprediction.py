@@ -3,7 +3,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import pickle
 
 tokens = pickle.load(open(r'/content/Ilayaraja_book_tokens.pkl', 'rb'))
-model_file = pickle.load(open(r'/content/Ilayaraja_book_model.pkl', 'rb'))
+model_file = pickle.load(open(r'/content/தமிழ்_புத்தகங்கள்_மாடல்.pkl', 'rb'))
 
 model = model_from_json(model_file['model_json'])
 model.set_weights(model_file['model_weights'])
