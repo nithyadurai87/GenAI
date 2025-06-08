@@ -2,7 +2,7 @@ from tensorflow.keras.models import model_from_json
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import pickle
 
-tokens = pickle.load(open(r'/content/Ilayaraja_book_tokens.pkl', 'rb'))
+tokens = pickle.load(open(r'/content/தமிழ்_புத்தகங்கள்_டோக்கன்.pkl', 'rb'))
 model_file = pickle.load(open(r'/content/தமிழ்_புத்தகங்கள்_மாடல்.pkl', 'rb'))
 
 model = model_from_json(model_file['model_json'])
